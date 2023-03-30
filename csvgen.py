@@ -191,7 +191,7 @@ for i in range(1000):
     name = random.choice(first_names) + " " + random.choice(last_names)
     illness = random.choice(medical_illnesses)
     # Generate a random severity value with 2 decimals
-    severity = round(random.uniform(1, 100), 2)
+    severity = round(random.randint(1, 1000))
     # Append the row to the data list
     data.append([name, illness, severity])
 
