@@ -35,7 +35,7 @@ class Trie:
             else:
                 cur = cur.children[cur_index]
         
-        return cur.word_end # When it goes len(word) levels deep into the trie, return if last node is the end of the word or not
+        return cur.word_end
     
     def is_set(self, word):
         cur = self.root
@@ -47,8 +47,6 @@ class Trie:
                 cur = cur.children[cur_index]
         
         return True
-
-
 
 dictionary = open("dictionary.txt", "r")
 words = dictionary.readlines()
